@@ -1,0 +1,125 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+li:focus-visible {
+  outline: none;
+}
+li:hover {
+  cursor: pointer;
+}
+@layer base {
+  :root {
+    /*------Color variables------*/
+    --black_900: #09090b;
+    --black_900_19: #00000019;
+    --black_900_3f: #0000003f;
+    --black_900_cc: #09090bcc;
+    --blue_a200: #3b82f6;
+    --blue_a200_19: #3b82f619;
+    --deep_purple_a200: #a855f7;
+    --gray_700: #724f4f;
+    --teal_400_0c: #10b9810c;
+    --teal_400_19: #10b98119;
+    --v0_integrate_ai_with_google_sheets_33hr6hg29_vercel_app_mercury: #eaeaea;
+    --v0_integrate_ai_with_google_sheets_33hr6hg29_vercel_app_mountain_meadow_0: #10b981;
+    --v0_integrate_ai_with_google_sheets_33hr6hg29_vercel_app_mountain_meadow_1: #101827;
+    --v0_integrate_ai_with_google_sheets_33hr6hg29_vercel_app_mountain_meadow_2: #e3e4e8;
+    --v0_integrate_ai_with_google_sheets_33hr6hg29_vercel_app_mountain_meadow_20_: #10b98133;
+    --v0_integrate_ai_with_google_sheets_33hr6hg29_vercel_app_santas_gray: #a1a1aa;
+    --v0_integrate_ai_with_google_sheets_33hr6hg29_vercel_app_shark: #27272a;
+    --v0_integrate_ai_with_google_sheets_33hr6hg29_vercel_app_shark_30_: #27272a4c;
+    --v0_integrate_ai_with_google_sheets_33hr6hg29_vercel_app_shark_40_: #27272a66;
+    --v0_integrate_ai_with_google_sheets_33hr6hg29_vercel_app_shark_50_: #27272a7f;
+    --v0_integrate_ai_with_google_sheets_33hr6hg29_vercel_app_white: #ffffff;
+    --v0_integrate_ai_with_google_sheets_33hr6hg29_vercel_app_woodsmoke_60_: #09090b99;
+    --v0_integrate_ai_with_google_sheets_33hr6hg29_vercel_app_zuccini: #052e16;
+    --black_900_0c: #0000000c;
+    --gray_400: #c9c9c9;
+    --green_a700: #22c55e;
+    --supabase_com_alabaster: #fafafa;
+
+    /*------Shadow variables------*/
+    --shadow-xs: 0 1px 2px 0 #0000000c;
+    --shadow-sm: 0 4px 6px -4px #00000019;
+    --shadow-md: 0 25px 50px -12px #0000003f;
+    --shadow-bs: 0 4px 6px -4px #10b98119;
+
+    /*------Border radius variables------*/
+    --radius-xs: 3px;
+    --radius-sm: 4px;
+    --radius-md: 6px;
+    --radius-lg: 8px;
+    --radius-xl: 10px;
+    --radius-2xl: 12px;
+    --radius-3xl: 16px;
+    --radius-4xl: 18px;
+    --radius-5xl: 20px;
+    --radius-6xl: 160px;
+
+    /*------Spacing variables------*/
+    --space-xs: 4px;
+    --space-sm: 6px;
+    --space-md: 8px;
+    --space-lg: 12px;
+    --space-xl: 14px;
+    --space-2xl: 16px;
+    --space-3xl: 18px;
+    --space-4xl: 24px;
+    --space-5xl: 32px;
+    --space-6xl: 48px;
+    --space-7xl: 64px;
+  }
+  [type="text"],
+  input:where(:not([type])),
+  [type="email"],
+  [type="url"],
+  [type="password"],
+  [type="number"],
+  [type="date"],
+  [type="datetime-local"],
+  [type="month"],
+  [type="search"],
+  [type="tel"],
+  [type="time"],
+  [type="week"],
+  [multiple],
+  textarea,
+  select {
+    appearance: none;
+    background-color: transparent;
+    border-color: unset;
+    border-width: 0;
+    border-radius: unset;
+    padding: unset;
+    font-size: unset;
+    line-height: unset;
+  }
+
+  /* Override default focus colors for tailwindcss-forms https://github.com/tailwindlabs/tailwindcss-forms */
+  [type="text"]:focus,
+  [type="email"]:focus,
+  [type="url"]:focus,
+  [type="password"]:focus,
+  [type="number"]:focus,
+  [type="date"]:focus,
+  [type="search"]:focus,
+  [multiple]:focus,
+  textarea:focus,
+  select:focus {
+    --tw-ring-color: transparent;
+    border-color: transparent;
+  }
+  [type="radio"]:focus,
+  [type="checkbox"]:focus {
+    --tw-ring-color: transparent;
+  }
+}
+@layer components {
+  /*-------------------------------------
+  Container CSS
+--------------------------------------*/
+  .container-xs {
+    @apply w-full mx-auto max-w-[1400px];
+  }
+}
